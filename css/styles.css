@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#title {
+  background-color: #ff4c68;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.container-fluid {
+  padding: 50px;
+
+}
+
+.row-h1{
+  color: white;
+  margin-bottom: 150px;
+}
+.navbar-brand {
+  font-size: 3rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  color: #edc2c2;
+}
+
+.navbar {
+  margin-bottom: 100px;
+}
+
+.nav-item {
+  padding: 18px;
+}
+
+.title-container {
+  margin: 20px 0px 20px 0;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 1.3rem;
+}
+
+.btn .fab {
+  margin-right: 8px;
+}
+
+.title-image {
+  width: 18%;
+  transform: rotate(20deg);
+  position: absolute;
+  top: 180px;
+  right: 150px;
+  transition: all 1s ease-out;
+}
+
+/* features section */
+#features {
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+#features .container-fluid .row div {
+  text-align: center;
+  padding: 50px;
+}
+
+#features .container-fluid .icon {
+  font-size: 3rem;
+
+  color: #f18f9f;
+}
+#features .container-fluid .icon:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+#features h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  line-height: 1;
+  padding: 10px;
+  
+}
+#features p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: grey;
+  padding: 10px;
+}
+
+/* testimonial section */
+#testimonials {
+  text-align: center;
+  background-color: #f87676;
+}
+.testimonial-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  display: inline-block;
+  color: white;
+}
+.testimonial-image {
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.carousel-item {
+  padding: 100px;
+}
+
+.carousel-caption {
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding: 30px;
+}
+
+/* press portion */
+
+#press {
+  background-color: #f87676;
+  text-align: center;
+}
+#press img {
+  margin: 50px;
+}
+
+/* pricing */
+#pricing .card {
+  font-family: "Ubuntu", sans-serif;
+}
+#pricing .card h3,
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+#pricing .btn {
+  padding: 8px;
+}
+#pricing p {
+  color: #90837a;
+  font-size: 18px;
+}
+
+#pricing .row {
+  padding-top: 50px;
+}
+
+@media (max-width: 990px) {
+  #title{
+text-align: center;
+  }
+  .title-image {
+    width: 50%;
+    position: static;
+    transform: none;
+    margin-left: 50px;
+    animation: rotate-back-forth 1s ease-in;
+  }
+}
+
+@media (min-width: 990px)  and ( max-width: 1400px) {
+  .title-image {
+    width: 50%;
+    transform: rotate(20deg);
+    position: static;
+    margin-left: 40px;
+    
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1517px) {
+  .title-image {
+    width: 20%;
+    position: absolute;
+    top: 200px;
+    right: 150px;
+  }
+}
+
+/* animation on title image */
+@keyframes rotate-back-forth {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(20deg);
+  }
+  30% {
+    transform: rotate(30deg);
+  }
+  40% {
+    transform: rotate(30deg);
+  }
+}
+
+#cta .container-fluid{
+  text-align: center;
+  padding: 50px;
+  background-color: #ff4c68;
+}
+#cta .container-fluid h3{
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif; ;
+}
+
+#cta .container-fluid button{
+  padding: 15px;
+  font-size: 22px;
+
+}
+#cta .container-fluid button i{
+  font-size: 25px;
+  padding: 10px;
+}
+#footer {
+ text-align: center;
+}
+#footer i{
+  font-size: 30px;
+  padding: 30px;
+}
+#footer p{
+  margin-bottom: 20px;
+  padding: 20px;
+}
